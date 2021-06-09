@@ -3,3 +3,12 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+.background-image {
+    background-image: url('https://variety.com/wp-content/uploads/2021/04/Twenty-One-Pilots-Livestream-Experience-Admat-LO-e1617817437819.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+}

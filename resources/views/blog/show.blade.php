@@ -10,7 +10,7 @@
 </div>
 
 <div class="w-4/5 m-auto">
-    <img class="w-4/5" src="/images/{{ $post->image_path }}" alt="">
+    <img class="w-4/5" src="{{ $post->image_path }}" alt="">
 </div>
 
 <div class="w-4/5 m-auto pt-20">

@@ -15,6 +15,10 @@ use App\Http\Controllers\PostsController;
 |
 */
 
+if (env('APP_ENV') === 'production') {
+    URL::forceSchema('https');
+}
+
 Route::get('/', [PagesController::class, 'index']);
 
 Route::resource('/blog', PostsController::class);

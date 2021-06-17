@@ -16,7 +16,7 @@ use App\Http\Controllers\PostsController;
 */
 
 if (env('APP_ENV') === 'production') {
-    URL::forceSchema('https');
+    URL::forceScheme('https');
 }
 
 Route::get('/', [PagesController::class, 'index']);

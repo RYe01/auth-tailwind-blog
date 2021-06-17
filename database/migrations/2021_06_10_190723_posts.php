@@ -18,7 +18,7 @@ class Posts extends Migration
             $table->string('slug');
             $table->string('title');
             $table->longText('description');
-            $table->string('image_path');
+            $table->string('image_path')->default('https://cdn.pixabay.com/photo/2018/03/04/19/49/coffee-3199010_960_720.jpg');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
